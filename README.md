@@ -40,8 +40,7 @@ the score is replaced by "Mate in 2" (you can force checkmate in 2 moves) or "Ma
 opponent force checkmate in 3). The narrow evaluation bar shortens it to "M2".
 
 ## Settings
-Click the extension icon in the Chrome toolbar. Changes apply right away. These control the practice mode
-against the computer:
+Click the extension icon in the Chrome toolbar. Changes apply right away.
 
 <p align="center">
   <img src="docs/settings.png" alt="Settings in Best mode" width="300">
