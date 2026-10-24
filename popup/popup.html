@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><link rel="stylesheet" href="popup.css"></head>
+<body>
+  <header>
+    <img src="../icons/48.png" alt="" width="28" height="28">
+    <h1>Board Coach</h1>
+  </header>
+  <section id="license" hidden>
+    <div id="licOk" hidden>
+      <span class="lbl">Licensed to <output id="licName"></output></span>
+      <button id="licRemove" class="link" type="button">Remove from this device</button>
+    </div>
+    <div id="licNone" hidden>
+      <span class="lbl">License key</span>
+      <div class="row">
+        <input id="licKey" type="text" placeholder="BC-XXXX-XXXX-XXXX-XXXX" autocomplete="off" spellcheck="false" aria-label="License key">
+        <button id="licGo" class="btn" type="button">Activate</button>
+      </div>
+    </div>
+    <span id="licMsg" class="hint" hidden></span>
+  </section>
+  <a id="upd" class="banner" hidden target="_blank" rel="noopener"></a>
+
+  <section>
+    <div class="field">
+      <span class="lbl">Suggestions</span>
+      <div class="seg" data-seg="suggest">
+        <button type="button" data-v="off">Off</button>
+        <button type="button" data-v="engine">Best</button>
+        <button type="button" data-v="human">Human</button>
+      </div>
+    </div>
+
+    <div class="field" data-show="any">
+      <span class="lbl">Arrows</span>
+      <div class="seg" data-seg="topN">
+        <button type="button" data-v="1">1</button>
+        <button type="button" data-v="2">2</button>
+        <button type="button" data-v="3">3</button>
+      </div>
+    </div>
+
+    <div class="field" data-show="any">
+      <span class="lbl">Style</span>
+      <div class="seg" data-seg="style">
+        <button type="button" data-v="arrows">Arrows</button>
+        <button type="button" data-v="dashed">Dashed</button>
+        <button type="button" data-v="squares">Squares</button>
+      </div>
+    </div>
+
+    <div class="field" data-show="human">
+      <span class="lbl">Elo <output id="humanEloOut"></output></span>
+      <input type="range" data-set="humanElo" min="400" max="2800" step="50" aria-label="Elo">
+    </div>
+
+    <label class="sw" data-show="any"><span>Show a verdict after each move</span><input type="checkbox" data-set="verdicts"></label>
+    <label class="sw" data-show="any"><span>Analyze opponent’s turn too</span><input type="checkbox" data-set="oppTurn"></label>
+  </section>
+  <script src="popup.js"></script>
+</body></html>
