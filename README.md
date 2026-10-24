@@ -20,17 +20,14 @@ The review works on every game you play, no matter who you played against. Every
 Chess.com screen, with no separate windows:
 - When a game ends, the analysis starts automatically and appears in the right sidebar, above the Chess.com move list.
 - Mistakes (?!, ?, ??) are marked directly in the Chess.com move list.
-- The board shows the move's mark, a green arrow for the best move, and an evaluation bar.
+- The board shows the move's mark, an arrow for the best move, and an evaluation bar.
 - Step through moves as usual (arrow keys or clicking moves in Chess.com's list).
 - Settings open from the extension icon in the Chrome toolbar.
 
-## Practice against the computer
-On top of the review, there is a practice mode for games against the computer (Chess.com bots at
-`chess.com/play/computer`, or the Lichess computer). Here the suggestions appear on the board while you
+## Practice
+On top of the review, there is a practice mode for games. Here the suggestions appear on the board while you
 play: arrows with the moves before you play them (the best one is the darker arrow; human moves show how
 likely each one is), a mark on each move after you play it, the evaluation bar, and ?!, ?, ?? in the move list.
-This is a training aid, so it is limited to games against the computer. In games against people the extension
-stays quiet until the game is over and only reviews it afterwards.
 
 <p align="center">
   <img src="docs/practice-human.jpg" alt="Human mode: suggested moves with how likely each one is, and the evaluation bar" width="560">
@@ -62,18 +59,12 @@ against the computer:
   The level also adapts to the score by itself: when you are ahead the imitated player makes more mistakes, when you
   are behind fewer (up to 300 Elo up or down), which keeps the game close.
 - **Show a verdict after each move**: the mark (★, ✓, ?!, ?, ??) on the board and in the move list after each move.
-- **Analyze opponent's turn too**: suggestions for the computer's moves as well, and a mark on each move it plays.
+- **Analyze opponent's turn too**: suggestions for the opponent's moves as well, and a mark on each move it plays.
 
 The analysis at the end of a game, and of any finished game you open, always starts automatically.
 
 ## Lichess
-Board Coach works on Lichess game pages too. A Lichess game counts as a game against the computer only when
-Lichess itself reports the opponent as its AI; otherwise it is treated as a game against a person. The analysis
-panel floats over the page (it can be dragged) because the Lichess sidebar has no room for it.
-
-## Fair play
-The extension refuses to analyze games in progress: it checks that the game is finished before running
-the engine, and it never draws anything on positions that aren't part of the analyzed game.
+Board Coach works on Lichess game pages too. The analysis panel floats over the page (it can be dragged) because the Lichess sidebar has no room for it.
 
 ## Notes
 - Chess.com occasionally changes its page structure. If something stops working, the places to update are
