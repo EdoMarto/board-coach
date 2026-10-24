@@ -891,16 +891,10 @@
     game: null, key: null, userColor: 'w', viewPly: null
   };
 
-  // Games against the computer only: Chess.com's /play/computer page, or a Lichess game whose
-  // opponent the Lichess export reports as the AI. Anything uncertain counts as a human opponent.
+  // You can insert here your logic so that this works only agains the computer.
+  // It currently works agains everyone, so human opponents included
   function isBotGamePage() {
-    if (SITE === 'lichess') {
-      const ref = gameIdFromUrl();
-      if (!ref) return false;
-      if (!(ref.key in finishedById)) probeFinished(ref);
-      return aiById[ref.key] === true;
-    }
-    return /^\/play\/computer(\/|$)/.test(location.pathname);
+    return true;
   }
 
   // Suggestions "Off" turns off everything during the game: no panel, no verdicts, no marks.
