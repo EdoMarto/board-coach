@@ -32,6 +32,12 @@ likely each one is), a mark on each move after you play it, the evaluation bar, 
 This is a training aid, so it is limited to games against the computer. In games against people the extension
 stays quiet until the game is over and only reviews it afterwards.
 
+<p align="center">
+  <img src="docs/practice-human.jpg" alt="Human mode: suggested moves with how likely each one is, and the evaluation bar" width="560">
+</p>
+
+In Human mode each arrow is labelled with how likely that move is, and the bar on the left shows the evaluation.
+
 Scores are in pawns from the point of view of the side to move (+1.0 = one pawn up). In the analysis at the end of the game, when there is a forced mate
 the score is replaced by "Mate in 2" (you can force checkmate in 2 moves) or "Mated in 3" (that move lets the
 opponent force checkmate in 3). The narrow evaluation bar shortens it to "M2".
