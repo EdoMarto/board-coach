@@ -1,7 +1,21 @@
+<p align="center">
+  <img src="docs/logo.jpg" alt="Board Coach" width="96">
+</p>
+
 # Board Coach
 
 A Chrome extension for Chess.com and Lichess that analyzes your games with Stockfish 19 as soon as they end
 (entirely in your browser, no external servers) and shows the results right on the Chess.com screen.
+
+## Settings
+
+The panel opens from the extension icon in the toolbar. Changes apply right away.
+
+<p align="center">
+  <img src="docs/settings.png" alt="Settings in Best mode" width="300">
+  &nbsp;&nbsp;
+  <img src="docs/settings-human.png" alt="Settings in Human mode, with the Elo slider" width="300">
+</p>
 
 ## Installation
 1. Unzip the archive into a folder.
